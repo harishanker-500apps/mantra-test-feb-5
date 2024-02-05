@@ -75,9 +75,10 @@ const handleCloseModal = ()=>{
         <span @click="handleCloseModal" class="fixed top-12 right-3 bg-blue-700 p-2 rounded-md cursor-pointer">{{ showModalButton }}</span>
         <Form v-if="showFormModal" :data="formData" :handleSubmit="handleCreateEmployee" />
         <Form v-if="showEditdataModal" :data="formData" :handleSubmit="editData" />
-        
+               <h2 v-if="employeeData.length === 0" class="text-2xl font-semibold mb-4  pl-2 text-center">No Data exist yet ... create new </h2>
         <div v-if="employeeData.length > 0" class="mt-8">
             <h2 class="text-2xl font-semibold mb-4  pl-2">Employee Data</h2>
+     
             <ul>
                 <li v-for="(employee, index) in employeeData" :key="index" class="mb-4 border p-4 flex justify-between items-center">
                     <div>
