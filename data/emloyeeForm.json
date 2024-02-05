@@ -1,0 +1,27 @@
+{
+  "name": "Employee Details Form",
+  "input": [
+    {
+      "name": "Name",
+      "type": "text"
+    },
+    {
+      "name": "Age",
+      "type": "number"
+    },
+    {
+      "name": "Gender",
+      "type": "select",
+      "options": ["Male", "Female", "Other"]
+    },
+    {
+      "name": "Date Of Joining",
+      "type": "date"
+    },
+    {
+      "name": "Designation",
+      "type": "select",
+      "options": ["Assistant Engineer", "Manager", "CTO", "CEO", "designer"]
+    }
+  ]
+}
