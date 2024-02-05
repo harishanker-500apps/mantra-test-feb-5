@@ -20,11 +20,11 @@ const saveData = (key, data) => {
 
 const editData = (data) =>{
     console.log(data)
-    contactsData.value[editDataIndex.value] = {...data};
-    const newData = [...contactsData.value];
-    localStorage.setItem("contacts data", JSON.stringify(newData));
-    console.log(contactsData)
-    showEditdataModal.value = false; 
+    employeeData.value[editDataIndex.value] = {...data};
+    const newData = [...employeeData.value];
+    localStorage.setItem("emloyee data", JSON.stringify(newData));
+    console.log(employeeData)
+    showEditdataModal.value = false;    
 }
 
 const handleEditEmployee = (index) => {
