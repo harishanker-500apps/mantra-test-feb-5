@@ -4,6 +4,14 @@ const props = defineProps(["data", "handleSubmit"]);
 const formData = props.data.input;
 const formValues = ref({});
 
+// function to prefill the values for v-model in case component is used for editing
+const fillFormDataValues = () => {
+    formData.forEach(input => {
+        formValues.value[input.name] = input.value;
+    })
+}
+fillFormDataValues()
+
 const submitForm = () => {
   props.handleSubmit(formValues.value);
 };
